@@ -40,7 +40,7 @@ const teacher = "Mr. Kung"
 // joining things together
 
 // using +
-document.write("<p>Hi " + student1 + "</p>")
+document.write("<p class='first-msg'>Hi " + student1 + "</p>")
 document.write(teacher + ' is born in ' + birthYear)
 
 // using ``
