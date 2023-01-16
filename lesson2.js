@@ -50,8 +50,10 @@ console.log(`${num1} + ${num2} = ${num1 + num2}`)
 // Comparisons
 // == soft comparison (different data type ok)
 // === hard comparison (must be same data type)
-// <= less than 
-// >= greater than
+// < less than
+// <= less than or equal to
+// > greater than
+// >= greater than or equal to
 
 if (5 <= 4) {
     console.log('true!')
@@ -60,7 +62,7 @@ if (5 <= 4) {
 // Multiple Conditions
 // && lets you add more conditions
 
-if (5 <= 7 && 2 >= 1) {
+if (5 <= 7 && 2 > 1) {
     console.log('correct!')
 }
 
