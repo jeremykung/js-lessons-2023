@@ -8,13 +8,16 @@
 */
 let sayHiMany
 let num = 0
+// this variable will hold the setInterval so we can cancel it later
 let numInterval
 
 function start() {
+    // start the setInterval, and store it in numInterval
     numInterval = setInterval(addNum, 1000)
 }
 
 function stop() {
+    // we can cancel the interval because we named it numInterval above
     clearInterval(numInterval)
 }
 
@@ -35,10 +38,12 @@ function sayHi() {
 }
 
 function writeOnScreen() {
-    // document.write('some stuff I wrote!')
+    // you can select specific HTML elements using querySelector() and change their text or HTML
+    // the argument is the selector (just like how you select them in CSS)
     document.querySelector(".story").innerText = "new story!"
     document.querySelector(".story").innerHTML = "<h1>new story!</h1>"
 
-    // document.getElementById("story").innerText = "<h1>new story!</h1>"
+    // getElementById() is another way to grab elements, but can only grab IDs
+    document.getElementById("story").innerText = "<h1>new story!</h1>"
 
 }
