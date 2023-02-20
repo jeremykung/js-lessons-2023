@@ -8,7 +8,7 @@
 */
 let sayHiMany
 let num = 0
-// this variable will hold the setInterval so we can cancel it later
+// this is an empty variable that will hold the setInterval later so we can cancel it
 let numInterval
 
 function start() {
