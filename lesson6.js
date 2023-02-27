@@ -54,6 +54,9 @@ function sayHi() {
     return 5
 }
 
+// You can save the return value in a variable
+const returnValue = sayHi()
+
 // Create an array of your top 3 foods
 // Add 2 more foods to the end of the array
 // Show the 4th item of the array in your HTML
