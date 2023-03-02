@@ -50,18 +50,26 @@ veg.forEach(function(element) {
     console.log(element)
 })
 
+// forEach() goes through your entire array and runs a function for each element in it
+
+// the function is defined inside the forEach() function
+// since it has no name, it is called an anonymous function
+
+// the function automatically has access to the element it is currently on through the element argument
+
+const vegetables = ["broccoli", "lettuce", "carrot", "corn"]
+
+vegetables.forEach(function(element) {
+    console.log(element)
+})
+
+// Finding the sum of an array using forEach
+
 let sum = 0
 
 const nums = [1, 2, 3, 100, 50]
 
-// forEach() goes through your entire array and runs a function for each element in it
-// the function is defined inside the forEach() function
-// since it has no name, it is called an anonymous function
-// the function automatically has access to the element it is currently on through the element argument
 nums.forEach(function(element) {
     sum = sum + element
     console.log(sum)
 })
-
-// Find the sum of the array elements
-//      - create a sum variable
