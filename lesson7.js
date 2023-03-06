@@ -10,6 +10,8 @@
     - foreach
     - anonmyous functions
 
+3. 2D Arrays
+
 */
 
 const students = ["Jen", "Evan", "Darren", "Nat", "MK", "Cindy"]
@@ -43,22 +45,23 @@ students.splice(1, 2)
     - anonmyous functions
 */
 
-const veg = ["broccoli", "lettuce", "carrot", "corn", "tomato"]
-
-// Anonmyous Function
-veg.forEach(function(element) {
-    console.log(element)
-})
 
 // forEach() goes through your entire array and runs a function for each element in it
 
-// the function is defined inside the forEach() function
+// the function can also be defined inside the forEach() function
 // since it has no name, it is called an anonymous function
 
 // the function automatically has access to the element it is currently on through the element argument
 
 const vegetables = ["broccoli", "lettuce", "carrot", "corn"]
 
+vegetables.forEach(logElement)
+
+function logElement(element) {
+    console.log(element)
+}
+
+// Anonymous Function
 vegetables.forEach(function(element) {
     console.log(element)
 })
@@ -69,7 +72,28 @@ let sum = 0
 
 const nums = [1, 2, 3, 100, 50]
 
+// nums.forEach(addAll)
+
+// function addAll(element) {
+//     sum = sum + element
+//     console.log(`adding ${element} to sum... ${sum}`)
+// }
+
+// Anonmyous Function
 nums.forEach(function(element) {
     sum = sum + element
     console.log(sum)
 })
+
+// 2D Arrays
+// they are basically arrays inside of an array
+
+const twoDArray = [
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+]
+
+console.log(twoDArray[0][1]) // gets 2
+console.log(twoDArray[2][2]) // gets 6
+console.log(twoDArray[1][0]) // gets 4

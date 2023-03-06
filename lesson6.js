@@ -7,8 +7,8 @@
     - Elements and Indexes
     - How do we manipulate them?
     - push() and pop()
-*/
 
+*/
 // Array
 // list of things
 
