@@ -9,6 +9,7 @@
 
 class Cookie {
     constructor(color, candy) {
+        // dynamic properties
         this.color = color
         this.candy = candy
         // default properties
