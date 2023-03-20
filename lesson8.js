@@ -53,6 +53,11 @@ const jar = {
     }
 }
 
+// Accessing object properties & methods
+console.log(whale.color)
+console.log(jar.material)
+console.log(whale.swim())
+console.log(jar.open())
 
 // Create 3 more objects
 // each object should be a friend you know
