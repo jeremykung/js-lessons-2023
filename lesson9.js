@@ -36,5 +36,5 @@ const cookie2 = new Cookie('red','twix')
 
 // Create a class songs
 // make 3 song objects from the class
-// there should be dynamic properties
+// there should be dynamic prope1rties
 // there should be default methods that use the "this" keyword
