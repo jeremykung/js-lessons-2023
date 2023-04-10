@@ -21,7 +21,7 @@ function addStudent() {
         name: nameData,
         grade: gradeData
     }
-
+2
     // 4. add object to array
     students.push(student)
 }
