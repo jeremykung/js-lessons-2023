@@ -40,3 +40,31 @@ function updatePet() {
     console.log(newPetName)
     console.log(newPetAge)
 }
+
+// Local Storage stores everything as a STRING
+
+const data = [
+    {
+        name: 'Jennifer',
+        grade: 10
+    },
+    {
+        name: 'Evan',
+        grade: 10
+    },
+]
+
+// convert data to string
+const stringData = JSON.stringify(data)
+
+// save to Local Storage
+localStorage.setItem('studentArray', stringData)
+
+// get the data
+const gotData = localStorage.getItem('studentArray')
+
+// convert back to JSON
+const convertedData = JSON.parse(gotData)
+
+console.log(convertedData[0])
+console.log(convertedData[0].name)
