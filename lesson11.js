@@ -42,7 +42,9 @@ function updatePet() {
 }
 
 // Local Storage stores everything as a STRING
+// How to store complex data (objects or arrays) in Local Storage
 
+// Define Data (Array of Objects)
 const data = [
     {
         name: 'Jennifer',
@@ -51,6 +53,10 @@ const data = [
     {
         name: 'Evan',
         grade: 10
+    },
+    {
+        name: 'Sam',
+        grade: 11
     },
 ]
 
@@ -66,5 +72,8 @@ const gotData = localStorage.getItem('studentArray')
 // convert back to JSON
 const convertedData = JSON.parse(gotData)
 
-console.log(convertedData[0])
-console.log(convertedData[0].name)
+// console.log(convertedData[0])
+// console.log(convertedData[0].name)
+
+
+// Review
