@@ -6,7 +6,8 @@ Array Methods Review
 
 */
 
-const data = [
+// Array of Objects
+let students = [
     {
         name: 'Skyler',
         grade: 9
@@ -19,13 +20,12 @@ const data = [
         name: 'Natasha',
         grade: 10
     },
-    {
-        name: 'Angus',
-        grade: 11
-    },
 ]
 
-data.forEach(function(element) {
+// 1. array.forEach()
+// does a function for each element in an array
+
+students.forEach(function(element) {
 
     console.log(element)
 
@@ -36,3 +36,16 @@ data.forEach(function(element) {
     `
     
 })
+
+// 2. array.filter()
+// Filtering out an element in the array
+
+const music = ['piano', 'violin', 'trumpet', 'flute', 'cello']
+
+const filteredMusic = music.filter(function(element) {
+    console.log('we are on element:', element)
+    return element !== 'trumpet'
+})
+
+// Create a number array
+// Filter out a number from that number array
